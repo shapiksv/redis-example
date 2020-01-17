@@ -1,6 +1,5 @@
 package com.teachrimers.cache.redisexample;
 
-import com.springredisexample.Application;
 import com.springredisexample.model.CustomerAccount;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -21,11 +20,6 @@ public class RedisExampleApplication {
 		redisTemplate.setConnectionFactory(jedisConnectionFactory());
 		return redisTemplate;
 	}
-
-
-//	public static void main(String[] args) {
-//		SpringApplication.run(Application.class, args);
-//	}
 
 	public static void main(String[] args) {
 		SpringApplication.run(RedisExampleApplication.class, args);
